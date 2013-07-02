@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+    <Resource name="jdbc/exam3" auth="Container"
+    	type="javax.sql.DataSource"
+    	username="one" password="one"
+    	driverClassName="org.apache.derby.jdbc.ClientDriver"
+   		url="jdbc:derby://localhost:1527/exam3"
+   	    maxActive="8" />
+    
+    <Realm className="org.apache.catalina.realm.JDBCRealm"
+    	debug="99" driverName="org.apache.derby.jdbc.ClientDriver"
+    	connectionURL="jdbc:derby://localhost:1527/exam3"
+    	connectionName="one" connectionPassword="one"
+    	userTable="APP.UserPass" userNameCol="username"
+    	userCredCol="password"
+    	userRoleTable="APP.UserRole" roleNameCol="rolename" />
+</Context>

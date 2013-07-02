@@ -1,0 +1,29 @@
+.header
+{
+	margin: auto;
+	width: 30%;	
+}
+
+.placement
+{
+	margin: auto;
+	width: 60%
+}
+
+.center
+{
+	margin: auto;
+	width: 100%;
+}
+
+#nameAndDate
+{
+	text-align: center;	
+}
+
+#projectTitle, #projectDate
+{
+	width: 250px;
+	text-align: center;
+	color: red;
+}
